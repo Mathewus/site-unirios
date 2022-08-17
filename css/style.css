@@ -1,0 +1,215 @@
+@import url(icons/css/fontello.css);
+
+* {
+	margin: 0;
+	padding: 0;
+	font-family: Arial;
+}
+
+/* CABEÇALHO */
+
+#cabecalho {
+	background-image: linear-gradient(to right, #006699, #00AFEF);
+}
+
+#cabecalho #logo {
+	width: 250px;
+	display: block;
+	margin: 0 auto;
+	padding: 30px;
+}
+
+#cabecalho #menu {
+	background-color: #FF9900;
+	text-align: center;
+}
+
+/* Elemento do submenu */
+#cabecalho #menu li {
+	display: inline-block;
+	position: relative;
+}
+
+/* Submenu */
+#cabecalho #menu li ul {
+	background-color: #F60;
+	width: 100%;
+	display: none;
+	position: absolute;
+}
+
+#cabecalho #menu li a {
+	color: #FFF;
+	text-decoration: none;
+	padding: 20px;
+	display: block;
+	transition: all 0.3s linear;
+	/* Transição para o estado HOVER */
+}
+
+#cabecalho #menu li a::before {
+	font-size: 24px;
+	margin-right: 10px;
+}
+
+#cabecalho #menu li a:hover {
+	background-color: #F60;
+}
+
+/* Exibe o submenu ao passar o mouse sobre o elemento pai */
+#cabecalho #menu li:hover ul {
+	display: block;
+}
+
+/* Faz o li do elemento filho ficar um a baixo do outro (bloco) */
+#cabecalho #menu li ul li {
+	display: block;
+}
+
+/* Formatação do link do submenu */
+#cabecalho #menu li ul li a {
+	border-bottom: 1px solid #F90;
+}
+
+/* Faz o link do submenu mudar de cor */
+#cabecalho #menu li ul li a:hover {
+	background-color: #F90;
+}
+
+/* Formatação do conteúdo do site */
+#conteudo {
+	max-width: 800px;
+	margin: 30px auto;
+}
+
+/* Formatar as imagens do conteúdo do site */
+#conteudo img {
+	width: 300px;
+	border-radius: 20px;
+}
+
+#conteudo #fachada-01 {
+	float: left;
+	margin-right: 20px;
+}
+
+#conteudo #fachada-02 {
+	float: right;
+	margin-left: 20px;
+}
+
+/* Formatar texto do conteúdo */
+#conteudo p {
+	text-align: justify;
+	/* Justifica os parágrafos */
+	margin-bottom: 20px;
+	line-height: 20px;
+	/* Espaçamento entre linhas */
+}
+
+/* Formatar rodapé */
+#rodape {
+	background-color: #BBB;
+	padding: 30px;
+}
+
+#rodape address {
+	font-style: normal;
+	text-align: center;
+	font-size: 12px;
+}
+
+/* PÁGINA CURSOS */
+
+h2{
+	text-align: center;
+	margin-bottom: 30px;
+}
+
+#cursos{
+	border-collapse: collapse; /* Aplica borde fina da tabela */
+	border-color: #999;
+}
+
+#cursos th, #cursos td{
+	padding: 15px;
+}
+
+#cursos th{
+	background-color: #DDD;
+}
+
+#cursos thead th:first-child{
+	border-top-color: transparent;
+	border-left-color: transparent;
+	background-color: transparent;
+}
+
+#cursos td img{
+	width: 100px;
+	display: block;
+	margin: 0 auto;
+	margin-bottom: 10px;
+}
+
+#cursos tr td{
+	text-align: center;
+}
+
+#cursos tr td:last-child{
+	text-align: left;
+}
+
+#cursos td ul{
+	margin-left: 15px;
+}
+
+#cursos li span{
+	color: #09C;
+}
+
+#cursos tbody tr:hover{
+	background-color: #DDD;
+}
+
+/* FORMULÁRIO */
+
+#formulario fieldset{
+	max-width: 400px;
+	margin: 0 auto;
+	padding: 20px;
+}
+
+#formulario fieldset div{
+	margin-bottom: 20px;
+}
+
+#formulario input, #formulario select, #formulario textarea{
+	padding: 10px;
+	border-radius: 5px;
+	border: 1px solid #999;
+}
+
+#formulario input:focus, 
+#formulario select:focus,
+#formulario textarea:focus{
+	background-color: #efca93;
+}
+
+#formulario textarea{
+	display: block;
+	resize: none;
+}
+
+#formulario #but{
+	background-color: #F90;
+	color: #FFF;
+	border: none;
+	padding-left: 20px;
+	padding-right: 20px;
+	cursor: pointer;
+}
+
+#formulario #but:hover{
+	background-color: #F60;
+}

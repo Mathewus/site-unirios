@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+	<title>Site UniRios</title>
+	<meta charset="utf-8">
+	<link rel="stylesheet" type="text/css" href="../css/style.css">
+</head>
+<body>
+
+<main>
+
+<header id="cabecalho">
+	<img src="../imagens/logo_unirios_branco.png" id="logo">
+	<nav id="menu">
+		<ul>
+			<li><a href="../index.html" class="icon-home">Home</a></li>
+			<li><a href="cursos.html" class="icon-book">Cursos</a></li>
+			<li><a href="https://www.unirios.edu.br" target="_blank" class="icon-pencil">Vestibular</a></li>
+			<li><a href="#" class="icon-suitcase">Bolsas e Financiamentos</a>
+				<ul>
+					<li><a href="http://prouni.mec.gov.br/" target="_blank">Prouni</a></li>
+					<li><a href="https://sisfiesportal.mec.gov.br/" target="_blank">Fies</a></li>
+					<li><a href="https://portal.fundacred.org.br/" target="_blank">Credies</a></li>
+					<li><a href="https://www.pravaler.com.br/" target="_blank">Pravaler</a></li>
+				</ul>
+			</li>
+			<li><a href="faleconosco.html" class="icon-mail-alt">Fale Conosco</a></li>
+		</ul>
+	</nav>
+</header>
+
+<section id="conteudo">
+	<h2>Fale Conosco</h2>
+
+	<form action="" id="formulario">
+		<fieldset>
+			<legend>Fale Conosco</legend>
+			<div>
+				<label for="nome">Nome</label>
+				<input type="text" placeholder="Nome completo" name="nome" id="nome" maxlength="10" required>
+			</div>
+			<div>
+				<label for="email">E-mail</label>
+				<input type="mail" name="email" id="email" required>
+			</div>
+			<div>
+				<label for="">Eu sou</label>
+				<input type="radio" name="tipo" id="tipo_aluno"> 
+				<label for="tipo_aluno">Aluno</label>
+				
+				<input type="radio" name="tipo" id="tipo_exaluno"> 
+				<label for="tipo_exaluno">Ex-aluno</label>
+				
+				<input type="radio" name="tipo" id="tipo_externo">
+				<label for="tipo_externo">Externo</label>
+			</div>
+			<div>
+				<label for="curso">Curso</label>
+				<select name="curso" id="curso" required>
+					<option value="">Selecione o curso</option>
+					<option value="adm">Administração</option>
+					<option value="bio">Biomedicina</option>
+					<option value="dir">Direito</option>
+					<option value="enf">Enfermagem</option>
+					<option value="far">Farmácia</option>
+					<option value="fis">Fisioterapia</option>
+					<option value="sif">Sistema de Informação</option>
+					<option value="odo">Odontologia</option>
+					<option value="psi">Psicologia</option>
+				</select>
+			</div>
+			<div>
+				<label for="data_nasc">Data de nascimento</label>
+				<input type="date" name="data_nasc" id="data_nasc" required>
+			</div>
+			<div>
+				<label for="">Interesse</label>
+				
+				<input type="checkbox" name="leitura" id="leitura">
+				<label for="leitura">Leitura</label>
+				
+				<input type="checkbox" name="filmes" id="filmes">
+				<label for="filmes">Filmes</label>
+				
+				<input type="checkbox" name="musicas" id="musicas">
+				<label for="musicas">Música</label>
+			</div>
+			<div>
+				<label for="mensagem">Mensagem</label>
+				<textarea name="mensagem" id="mensagem" cols="30" rows="10" required></textarea>
+			</div>
+			<div>
+				<input type="submit" id="but" value="Enviar">
+			</div>
+		</fieldset>
+	</form>
+</section>
+
+<footer id="rodape">
+	<address>
+		Rua Vereador José Moreira nº 1000 - Perpétuo Socorro - CEP: 48603-004<br>
+		Paulo Afonso - Bahia - Brasil<br>
+		Fone/Fax: (75) 3501-0777
+	</address>
+</footer>
+
+</main>
+
+</body>
+</html>
